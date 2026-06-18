@@ -5,6 +5,9 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import TrustedBy from "../components/TrustedBy";
 import Workspace from "../components/Workspace";
+import Features from "../components/Features";
+import DescribeAndHistory from "../components/DescribeandHistory";
+import HowItWorks from "../components/HowItsWork";
 
 export default function Home() {
 
@@ -54,6 +57,12 @@ export default function Home() {
           selectedFormat={selectedFormat}
           onChangeFormat={handleSelectFormatFromCard}
         />
+
+        <Features selectedFormat={selectedFormat} onSelectFormat={handleSelectFormatFromCard} />
+
+        <DescribeAndHistory />
+
+        <HowItWorks />
     </div>    
   );
 }
