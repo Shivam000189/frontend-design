@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///D:/shivam/projects/premiumwebsite/plume-clone/app/page.tsx"],"sourcesContent":["'use Client'\n\nexport default function Home() {\n  return (\n    <div>\n        Hello world\n    </div>    \n  );\n}\n"],"names":["Home"],"mappings":";;;;;AAAA;;AAEe,SAASA;IACtB,qBACE,8OAAC;kBAAI;;;;;;AAIT"}}]
-}
