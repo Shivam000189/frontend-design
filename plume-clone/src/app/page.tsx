@@ -8,6 +8,9 @@ import Workspace from "../components/Workspace";
 import Features from "../components/Features";
 import DescribeAndHistory from "../components/DescribeandHistory";
 import HowItWorks from "../components/HowItsWork";
+import UseCases from "../components/UseCases";
+import Pricing from "../components/Pricing";
+import Footer from "../components/Footers";
 
 export default function Home() {
 
@@ -63,6 +66,27 @@ export default function Home() {
         <DescribeAndHistory />
 
         <HowItWorks />
+
+
+        <UseCases onLoadPreset={(preset) => {
+          setCurrentPrompt(preset);
+          // Switch formats automatically based on audience for smart UX
+          if (preset.includes("sprint") || preset.includes("roadmap")) {
+            setSelectedFormat("release-note");
+          } else if (preset.includes("announce") || preset.includes("cohort")) {
+            setSelectedFormat("newsletter");
+          } else {
+            setSelectedFormat("changelog");
+          }
+        }} />
+
+
+        {/* <Number /> */}
+
+
+        <Pricing />
+
+        <Footer onScrollToTop={() => window.scrollTo({top:0, behavior:"smooth"})}/>
     </div>    
   );
 }
