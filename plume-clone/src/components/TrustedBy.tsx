@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
-import { Hexagon, Layers, Star, Globe, Shield, RefreshCw } from "lucide-react";
+import { Hexagon, Layers, Circle, Dot, Globe, Shield, RefreshCw } from "lucide-react";
 
 export default function TrustedBy() {
   const brands = [
     { name: "Lyraflick", icon: Layers },
     { name: "Sivologic", icon: Hexagon },
-    { name: "Nestclick", icon: Star },
+    { name: "Nestclick", icon: Circle },
     { name: "Voltbash", icon: Globe },
     { name: "Bloopsync", icon: Shield },
     { name: "Syncdrop", icon: RefreshCw },

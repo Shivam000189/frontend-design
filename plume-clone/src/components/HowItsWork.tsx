@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CheckCircle, ArrowRight, Clipboard, Sparkles } from "lucide-react";
+import { CheckCircle, ArrowRight, Clipboard, Sparkles, Pen } from "lucide-react";
 
 export default function HowItWorks() {
   const steps = [
@@ -15,7 +15,7 @@ export default function HowItWorks() {
       title: "Generate in seconds",
       desc: "Our calibrated models compile your notes into clean categorized release items, newsletters, or tech logs in blocks.",
       colorClass: "bg-amber-500",
-      icon: Sparkles
+      icon: Pen
     },
     {
       num: "03",

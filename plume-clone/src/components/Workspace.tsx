@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { DraftDocument } from "../types/types";
 import {
   FileText,
+  Dot,
   Plus,
   PenTool,
   Clock,
@@ -14,6 +15,7 @@ import {
   AlertCircle,
   HelpCircle,
   TrendingUp,
+  Pen,
 } from "lucide-react";
 
 interface WorkspaceProps {
@@ -236,7 +238,7 @@ Try it out today and let us know what you build!`,
         className="text-center md:text-left mb-10"
       >
         <label className="text-xs font-bold tracking-[2px] uppercase text-brand-accent flex items-center justify-center md:justify-start gap-2 mb-3">
-          <Sparkles className="w-4 h-4 text-brand-accent animate-pulse" /> Live Workspace
+          <Dot className="w-4 h-4 text-brand-accent animate-pulse" /> Live Workspace
         </label>
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-text leading-tight">
           Your Intelligent Writing Room
@@ -427,7 +429,7 @@ Try it out today and let us know what you build!`,
                     </div>
                   ) : (
                     <>
-                      <Sparkles className="w-3.5 h-3.5 text-white/90" />
+                      <Dot className="w-3.5 h-3.5 text-white/90" />
                       <span>Write Document</span>
                     </>
                   )}
@@ -477,7 +479,7 @@ Try it out today and let us know what you build!`,
                       whileHover={{ y: -4, boxShadow: "0 10px 20px rgba(0,0,0,0.03)" }}
                       className="border border-brand-border rounded-xl p-4 bg-brand-bg/5 flex flex-col gap-1.5 text-center transition-all"
                     >
-                      <Sparkles className="w-5 h-5 text-amber-500 mx-auto" />
+                      <Pen className="w-5 h-5 text-amber-500 mx-auto" />
                       <span className="text-[10px] font-bold tracking-wider text-brand-muted uppercase mt-1">
                         Words Generated
                       </span>
@@ -645,7 +647,7 @@ Try it out today and let us know what you build!`,
                             className="bg-brand-accent hover:bg-brand-accent-hover text-white text-[11px] font-bold px-2.5 py-1.5 rounded-md flex items-center gap-1.5 transition-all cursor-pointer"
                             title="Save response"
                           >
-                            <Plus className="w-3.5 h-3.5" />
+                            <Dot className="w-3.5 h-3.5" />
                             <span>Save Draft</span>
                           </button>
                         </div>

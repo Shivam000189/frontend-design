@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Sparkles, FileText, ArrowRight, Rss, BookOpen, Layers } from "lucide-react";
+import { Sparkles, FileText, ArrowRight, Rss, BookOpen, Layers, Notebook } from "lucide-react";
 import { TemplateType } from "../types/types";
 
 interface FeaturesProps {
@@ -116,7 +116,7 @@ export default function Features({ onSelectFormat, selectedFormat }: FeaturesPro
                     isSelected ? "bg-brand-accent text-white" : "bg-brand-bg text-brand-text"
                   }`}>
                     {f.id === "changelog" && <FileText className="w-4 h-4" />}
-                    {f.id === "release-note" && <Sparkles className="w-4 h-4" />}
+                    {f.id === "release-note" && <Notebook className="w-4 h-4" />}
                     {f.id === "newsletter" && <Rss className="w-4 h-4" />}
                     {f.id === "blog-post" && <BookOpen className="w-4 h-4" />}
                   </div>

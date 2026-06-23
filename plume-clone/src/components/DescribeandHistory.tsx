@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Sparkles, History, RotateCcw, ArrowRight, Play, Check } from "lucide-react";
+import { Sparkles, History, RotateCcw, ArrowRight, Play, Check, Box } from "lucide-react";
 
 export default function DescribeAndHistory() {
   const [inputText, setInputText] = useState("bump rate limiting, add retry logic");
@@ -79,7 +79,7 @@ export default function DescribeAndHistory() {
           >
             <div>
               <span className="text-xs font-bold tracking-widest text-[#e8654a] uppercase mb-3 flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-[#e8654a] animate-pulse" /> AI refinement
+                <Box className="w-4 h-4 text-[#e8654a] animate-pulse" /> AI refinement
               </span>
               <h3 className="font-display text-3xl md:text-4xl font-extrabold text-brand-text leading-tight mb-4">
                 Describe, don't write.
