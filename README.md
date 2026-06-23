@@ -1,10 +1,8 @@
 Plum-clone ---- inspired from framer
-videos/Plum-tree.mp4
- 
+plume-clone/public/Plum.png
  
  
  
 
 Vertex ----- inspired from dribble
-
 
